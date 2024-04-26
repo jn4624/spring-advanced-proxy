@@ -8,6 +8,11 @@ import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Proxy;
 
+/**
+ * JDK 동적 프록시는
+ * 인터페이스가 필수이기 때문에
+ * 인터페이스 기반인 v1 에만 적용 가능하다.
+ */
 @Configuration
 public class DynamicProxyBasicConfig {
     @Bean
